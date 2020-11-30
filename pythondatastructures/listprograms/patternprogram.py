@@ -6,3 +6,6 @@ for num in lst:
     else:
         out.append((num-1))
 print(out)
+
+#out=[num**2 for num in  lst]
+#print(out)
