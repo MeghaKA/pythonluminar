@@ -48,6 +48,10 @@ for employee in employees:
 
 #print all emploee details whose experience>9years
 
-patterns="ABABA"
+string="ABABA"
 #first recursive character
+for letter in string:
+    if letter in string:
+        print(letter)
+        break
 
