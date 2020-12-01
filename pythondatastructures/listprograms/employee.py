@@ -47,3 +47,7 @@ for employee in employees:
 #print all emloyee those  whoareworking in 1980's
 
 #print all emploee details whose experience>9years
+
+patterns="ABABA"
+#first recursive character
+
