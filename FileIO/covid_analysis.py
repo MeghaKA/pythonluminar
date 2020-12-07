@@ -7,10 +7,17 @@ for lines in f:
     state=data[1]
     confirmed_cases=data[4]
     if state not in dict:
-        dict[state]=confirmed_cases
+        dict[state]=float(confirmed_cases)
     else:
-        dict[state]=confirmed_cases
+        dict[state]=float(confirmed_cases)
 for k,v in dict.items():
     print(k,v)
 
+highest=max(dict,key=dict.get)
+print("highest",highest,dict[highest])
 
+lowest=min(dict,key=dict.get)
+print("lowest",lowest,dict[lowest])
+
+srt=sorted(dict,key=dict.get,reverse=True)
+print("sorted","-",srt)
