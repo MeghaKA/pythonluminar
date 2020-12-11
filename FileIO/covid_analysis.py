@@ -7,9 +7,9 @@ for lines in f:
     state=data[1]
     confirmed_cases=data[4]
     if state not in dict:
-        dict[state]=float(confirmed_cases)
+        dict[state]=int(confirmed_cases)
     else:
-        dict[state]=float(confirmed_cases)
+        dict[state]=int(confirmed_cases)
 for k,v in dict.items():
     print(k,v)
 
