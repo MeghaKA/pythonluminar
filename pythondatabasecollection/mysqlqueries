@@ -1,0 +1,64 @@
+sql>show databases;
+list all databases
+
+sql>create database cms;
+
+sql>use cms;
+
+>show tables;
+
+
+
+>students(rol,name,course,age)
+>create table students(rol varchar(10),name varchar(10),course varchar(20),age  int);
+>desc students;
+
+
+keys>primary key,foreign key
+>insert into  students(rol,name,course,age)values('100','ajay','mca',25);
+
+
+>select  * from  students;
+
+>select name from students;
+
+>select name from students where course='mca';
+>100 rol
+>update ajays age as  26
+>update students  set age=26 where rol='100';
+
+>delete from students where rol='104';
+>
+
+>Billing system
+
+>bill(slno,itemname,unitprice,qty,billno,cust_id,
+
+# csv file to mysql query:-
+
+    LOAD DATA LOCAL INFILE '/home/ubuntu/Downloads/movies.csv'
+    INTO TABLE movies
+    FIELDS TERMINATED BY ','
+    ENCLOSED BY '"'
+    LINES TERMINATED BY '\n'
+    IGNORE 1 ROWS;
+
+
+
+
+highest  rating movie:
+    select  max(rating) from movies;
+
+
+find no: of movies with highest rating:
+    select count(movie_name) from movies where rating=4.5;
+    select movie_name from movies where rating=4.5;
+
+count number of movies released per year:
+    select count(*),year from movies group by year;
+
+list movie names in descending order of rating:
+    select movie_name from movies order by rating desc;
+
+
+

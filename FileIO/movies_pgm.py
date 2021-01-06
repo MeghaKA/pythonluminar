@@ -1,4 +1,4 @@
-f=open("movies_csv","r")
+f=open("movies.csv", "r")
 
 movie_data={}
 for lines in f:
